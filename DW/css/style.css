@@ -1,0 +1,207 @@
+/* CSS Document */
+body{
+	margin:0;
+	padding: 0;
+	background:url("../img/bc3.jpg") no-repeat center top / cover fixed;
+	font-family: 'Tenor Sans';
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Caveat';
+	font-weight: 400;
+	margin: 0.7em 0 0.3em;
+}
+h1{font-size: 36px}
+h2{font-size: 30px}
+h3{font-size: 26px}
+h4{font-size: 20px}
+h5{font-size: 16px}
+a:link,a:visited{
+	color: #fcfc587a;
+	text-decoration: none;
+}
+a:hover{
+	color:#40480F;
+	text-decoration: underline;
+}
+a:active{
+	color:#EB9B24;
+}
+
+#wrapper{
+	background: #A29B7C;
+	margin:20px auto;
+	width: 960px;
+	padding: 15px;
+}
+#header{
+	height:67px;
+	font-family: 'Dancing Script';
+	background: #8e8e617a;
+	margin: 0 0 20px 0;
+	padding: 7px;
+	animation:header-change infinite 10s;
+}
+@keyframes header-change{
+	0%{
+		background: #8e8e617a;
+	}
+	30%{
+		background:#6F7034;
+	}
+	50%{
+		background:#848624;
+	}
+	70%{
+		background:#787A16; 
+	}
+	100%{
+		background: #8e8e617a;
+	}
+}
+#header h1{
+	text-align: center;
+}
+#nav{
+	height:54px;
+	font-family: 'Caveat';
+	background: #8b8c4b87;
+	margin: 0 0 8px 0;
+}
+#nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav ul li{
+	display: inline-block;
+	position: relative;
+}
+#nav ul li a{
+	padding: 10px 23px;
+	height: 32px;
+	line-height: 20px;
+	display: block;
+	transition: 2s all ease;
+}
+#nav ul li a:link,a:visited{
+	color: #000000;
+	text-decoration: none;
+}
+#nav ul li a:hover{
+	color:#F0E60C;
+	transition: 0.3s all ease;
+}
+#nav ul li a:active{
+	color: #FFC60B;
+	text-decoration: none;
+	background: #A0490C;
+}
+#nav ul li ul{
+	background: #8b8c4b87;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100px;
+	display: none;
+}
+#nav ul li:hover ul{
+	display: block;
+}
+#nav ul li ul li{
+	display: block;
+}
+#main{
+	background: #8e8e617a;
+	width: 700px;
+	float:left;
+	margin: 0 0 10px 0;
+}
+#sidebar{
+	background: #8e8e617a;
+	font-family: 'Dancing Script';
+	width: 240px;
+	float:right;
+	margin: 0 0 10px 0;
+}
+#sidebar h2{
+	text-align: center;
+	margin: 0 0 30px 0;
+	padding: 5px 10px;
+	background: #8b8c4b87;
+}
+#footer{
+	color: black;
+	font-size: 12px;
+	text-align: center;
+	background: #8b8c4b87;
+	height: 53px;
+	clear:both;
+	padding: 4px 0 4px 0;
+}
+#footer p{
+	margin: 0;
+}
+.imgLeft{
+	float:left;
+	margin:5px 18px 4px 0;
+}
+.imgLeft p{
+	margin: 0 0 17px 0;
+	font-size: 13px;
+	text-align: center;
+}
+table,th,td{
+	border:1px solid black;
+	border-collapse: collapse;
+	padding:7px;
+}
+table, td{
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Dancing Script';
+}
+table, td, img{
+    display: table-cell;
+}
+td{
+	background: #8b8c4b87;
+}
+
+.dropbtn {
+  background-color: #98956f;
+  color: black;
+  padding: 16px;
+  font-size: 12px;
+  border: 1px solid #8a875b;
+  cursor: pointer;
+  width: 92px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #8b8c4b87;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color:#40480F }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color:#40480F;
+}
+
+

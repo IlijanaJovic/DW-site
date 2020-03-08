@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Djela</title>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Dancing+Script:400,700|Tenor+Sans&display=swap&subset=latin-ext" rel="stylesheet">
+	
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+</script>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<h1>Fjodor Mihajlovic Dostojevski</h1>
+		</header>
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Pocetna</a></li>
+				<li><a href="djela.html">Djela</a>
+					<ul>
+						<li><a href="#bracakaramazov.html">Braca Karamazov</a></li>
+						<li><a href="#zapisiizpodzemlja.html">Zapisi iz podzemlja</a></li>
+						<li><a href="#zlocinikazna.html">Zlocin i kazna</a></li>
+					</ul>
+				</li>
+				<li><a href="zis.html">Zivot i smrt</a></li>
+			</ul>
+		</nav>
+	
+	<div id="main">
+		<h2 id="bracakaramazov.html">Braca Karamazov</h2>
+		<p>Braća Karamazovi (ruski: Братья Карамазовы) posljednja je knjiga ruskog pisca Fjodora Mihajloviča Dostojevskog. Dostojevski je proveo skoro dvije godine pišući knjigu Braća Karamazovi, koja je prvi put izdana u serijalnoj formi u časopisu Ruski Vjesnik, i završena je 1880. godine.</p>
+		<p>To je filozofski dramski roman koji raspravlja o raznim temama, kao što su Bog, slobodna volja, moral, ljudska nesavršenost i iskupljenje. Po romanu je snimljeno nekoliko televizijskih i filmskih adaptacija.</p>
+		<p>Moglo bi se reći da likovi braće Karamazovi predstavljaju različite aspekte iste, piščeve ličnosti ili pojedine razvojne faze njegovog života.</p>
+		<a href="bracakaramazov.html">Read more..</a>
+		
+		<h2 id="zapisiizpodzemlja.html">Zapisi iz podzemlja</h2>
+		<p>Zapisi iz mrtvog doma/Zapisi iz podzemlja, ova dva romana-zapisa, koja je Dostojevski ostavio čovječanstvu u amanet, na čuvanje, u formi su čiste ispovijedi. Oba potiču iz njegova srednjeg razdoblja života, prije pisanja tzv. velikih romana poput<a href="zlocinikazna.html"> Zločina i kazne</a>, Idiota, Bjesova, Mladića i <a href="bracakaramazov.html">Braće Karamazovi </a>. Njihova zanimljivost sadržana je u tome što glavni likovi, Aleksandar Petrovič Gorjančenko iz Mrtvog Doma i neimenovani autor iz Podzemlja, dok se ispovijedaju, beskompromisno ogrijezaju u samoći; usamljuju se do ludila, bježeći od ljudi što je moguće dalje… Stoga se možemo zapitati, nisu li ova dva romansirana lika nastala iz dubokih osjećanja samog pisca koja su mu potresala dušu za života, i koja su ga možda, u konačnici, potpuno oblikovala i kao pisca i kao čovjeka?</p>
+		<a href="zapisiizpodzemlja.html">Read more..</a>
+		
+		<h2 id="zlocinikazna.html">Zlocin i kazna</h2>
+		<p>Zločin i kazna (ruski: Преступление и наказание / Prestuplenie i nakazanie) je roman ruskog pisca Fjodora Mihajloviča Dostojevskog izdan 1866. godine u časopisu Ruski vjesnik. Smatra se jednim od najvećih djela ruske književnosti.</p>
+		<a href="zlocinikazna.html">Read more..</a>	
+			
+	</div>
+	<aside id="sidebar">
+		<h2>Citati:</h2>
+		<ul>
+			<li>"Svi ideali ovog sveta ne vrede suze jednog deteta."</li>
+			<li>"Učiniti prvi korak, izreći novu reč, ono je čega se ljudi najviše plaše."</li>
+			<li>"Čovek je sklon nabrajanju svojih nevolja, ali nikada ne nabraja svoje radosti. Kada bi ih nabrojao onako kako to one zaslužuju uvideo bi da svako ima dovoljno sreće u životu."</li>
+			<li>"Bol i patnja su uvijek neizbježni za veliku inteligenciju i duboko srce. Zaista veliki ljudi moraju, uvjeren sam, da imaju veliku žalost na Zemlji."</li>
+			<li>"Ako želiš da te drugi poštuju, važna stvar je da poštuješ sam sebe. Jedino samopoštovanjem ćeš potaknuti i druge da te poštuju."</li>
+			<li>"Moć je data samo onima koji se usude da se sagnu i podignu je. Samo jedna stvar je bitna, samo jedna - <strong>biti u stanju da se usudiš</strong>"</li>
+			<li>"Ne može se voleti ono što se ne poznaje. Bilo da je reč o čoveku ili o narodu. Budite sigurni da svi oni koji svoj narod prestaju da razumeju i gube vezu sa njim, odmah i u istoj meri gube i veru očeva, postaju ili ateisti ili ravnodušni ljudi"</li>
+			<a href="https://www.metafora.hr/fjodor-mihajlovic-dostojevski-zapisi-iz-mrtvog-doma-zapisi-iz-podzemlja/">Read more..</a>
+		</ul>
+	</aside>	
+	
+	<footer id="footer">
+	<p><em>Text &amp; images:Wikipedia</em></p>
+	<p>Copyright &copy; Fjodor Mihalovic Dostojevski</p>
+	</footer>	
+	</div>
+	
+	<script>
+	$('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) {
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); 
+            $target.focus(); 
+          };
+        });
+      }
+    }
+  });
+	</script>
+	
+</body>
+</html>
+
